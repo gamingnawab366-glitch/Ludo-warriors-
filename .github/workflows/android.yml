@@ -12,7 +12,7 @@ jobs:
       - uses: chickensoft-games/setup-godot@v1
         with:
           version: 4.3.0
-          use-dotnet: fals
+          use-dotnet: false
 
       - name: Build APK
         run: |
