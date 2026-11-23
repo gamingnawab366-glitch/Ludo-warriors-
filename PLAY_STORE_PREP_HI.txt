@@ -1,0 +1,26 @@
+LUDO WARRIORS — ANDROID RELEASE PREP
+====================================
+
+यह पैकेज Android export के लिए तैयार किया गया Godot project है:
+- App name: Ludo Warriors
+- Package ID: com.ludowarriors.game
+- Version: 1.0.0 (version code 1)
+- Portrait orientation
+- Android app icon included (icon.png)
+- Android export preset included (export_presets.cfg)
+- Renderer: GL Compatibility (Android-friendly)
+
+ईमानदार स्थिति:
+- यह मौजूदा local pass-and-play (2 या 4 खिलाड़ी) गेम है।
+- इसमें ऑनलाइन matchmaking/server, accounts, chat या tournaments नहीं हैं।
+- इस environment में Godot Android export templates, Android SDK और signing keystore उपलब्ध नहीं हैं;
+  इसलिए APK/AAB यहाँ से compile/sign नहीं किया गया है।
+- Play Store पर डालने से पहले Godot में project run-test, Android device test,
+  release keystore signing, AAB export और Play Console policy/forms पूरे करने होंगे।
+
+Project files:
+- project.godot: Android portrait setup + app metadata
+- export_presets.cfg: Android export preset
+- icon.png: app icon
+- Main.gd / Main.tscn: game
+- assets/: sound and music

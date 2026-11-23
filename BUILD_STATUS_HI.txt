@@ -1,0 +1,8 @@
+BUILD STATUS
+
+Added: GitHub Actions workflow for cloud Android DEBUG APK export.
+Added: Hindi instructions for initiating the build from a phone.
+Not verified: GitHub Actions execution, Android installation, gameplay on device.
+Not included: Play Store AAB, production signing, online multiplayer backend.
+
+Do not describe this package as a tested APK or Play Store-ready release.

@@ -1,0 +1,25 @@
+LUDO WARRIORS — PHONE-ONLY CLOUD APK BUILD
+
+यह पैकेज GitHub Actions के जरिए cloud में DEBUG APK बनाने की कोशिश करता है।
+इससे आपके फोन पर Godot/Android SDK install करने की जरूरत नहीं होगी।
+
+फोन से करने के चरण:
+1. github.com पर account बनाकर sign in करें।
+2. New repository बनाएं; नाम Ludo-Warriors रखें और Public या Private चुनें।
+3. इस ZIP को फोन में extract करें। GitHub की website पर repository खोलें।
+4. Add file > Upload files चुनें और ZIP के अंदर की सभी फाइलें/फोल्डर upload करें।
+   ध्यान दें: ZIP फाइल को अकेले upload न करें; उसके अंदर का project content upload करें।
+   .github hidden folder भी upload होना जरूरी है।
+5. Commit changes करें। Actions tab खोलें।
+6. “Build Ludo Warriors Android APK” workflow चुनें और Run workflow दबाएं।
+7. Build सफल होने पर workflow run खोलें; Artifacts में
+   Ludo-Warriors-Android-debug-APK डाउनलोड करें।
+8. ZIP artifact extract करके APK फोन में install करें। Android पूछे तो केवल
+   इस डाउनलोड के लिए browser/files app को install permission दें।
+
+जरूरी सीमाएं:
+- यह cloud workflow Godot 4.4.1 से DEBUG APK export करने के लिए है।
+- यह Play Store का release AAB नहीं बनाता और Play signing key नहीं बनाता।
+- Workflow अभी इस environment में run नहीं किया गया; build सफल होने की गारंटी नहीं है।
+- यदि Actions में error आए, उसका पूरा log/screenshot साझा करें; उसी के अनुसार fix होगा।
+- Source game अभी offline local pass-and-play है; online rooms/matchmaking शामिल नहीं हैं।

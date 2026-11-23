@@ -1,0 +1,24 @@
+LUDO WARRIORS — RELEASE CANDIDATE QA STATUS
+===========================================
+
+इस पैकेज में Android तैयारी और पूरा offline Godot project एक साथ रखा गया है।
+
+इस बार पैकेज स्तर पर जाँच:
+- ZIP archive खुलता है और project files मौजूद हैं।
+- Main.tscn में Main.gd scene script जुड़ी है।
+- project.godot में Main.tscn startup scene है।
+- Android export preset मौजूद है।
+- App icon PNG मौजूद है।
+- Dice, capture और arcade music audio assets मौजूद हैं।
+
+अभी सत्यापित नहीं:
+- Godot Engine runtime में project launch / GDScript runtime test।
+- Android APK/AAB compilation और signing।
+- असली Android फोन पर touch, screen scaling, audio और gameplay test।
+- Play Console upload / policy approval।
+
+महत्वपूर्ण: इस environment में Godot executable, Android SDK/export templates और release keystore उपलब्ध नहीं हैं। इसलिए इसे Play Store-ready APK/AAB न समझें।
+
+मौजूदा gameplay सीमा:
+- 2–4 खिलाड़ियों का local pass-and-play।
+- Online room code, random matchmaking, login, chat, tournaments और server backend शामिल नहीं हैं।
