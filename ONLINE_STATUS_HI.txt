@@ -1,0 +1,3 @@
+ऑनलाइन स्थिति: इस पैकेज में playable online multiplayer शामिल नहीं है।
+Room Code, Random Match, login, chat और tournament backend उपलब्ध नहीं हैं।
+कृपया इसे online build के रूप में प्रकाशित न करें।

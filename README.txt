@@ -1,0 +1,1 @@
+Ludo Warriors offline local multiplayer Godot project. Import project.godot in Godot 4.7.2 or compatible Godot 4.x and press Play. See README_HI.txt for Hindi instructions and feature/status details. Not an online or Play Store export build.

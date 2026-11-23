@@ -1,0 +1,9 @@
+LUDO WARRIORS — NEXT BUILD
+
+Gameplay update:
+- Fixed turn handling when a player rolls a 6 but has no legal pawn move.
+- The player now receives the extra roll, and the consecutive-six counter is preserved for the three-sixes rule.
+- HUD labels this build as OFFLINE to avoid implying that network play is already connected.
+
+This is a Godot 4.x offline hot-seat project. Online matchmaking, accounts, chat, tournaments, and Play Store AAB signing are not included in this build.
+Runtime testing in Godot is still required before release.
