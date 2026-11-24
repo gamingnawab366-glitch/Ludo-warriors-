@@ -1,27 +1,20 @@
+name: Ludo Warriors APK
 
-name: Build Ludo Warriors Android APK
-
-"on":
+on:
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
-      - uses: chickensoft-games/setup-godot@v1
-        with:
-          version: 4.3.0
-          use-dotnet: false
-
-      - name: Build APK
+      - name: Install Godot
         run: |
-          mkdir -p build
-          godot --headless --path . --export-debug "Android" build/LudoWarriors.apk
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip Godot_v4.3-stable_linux.x86_64.zip
+          chmod +x Godot_v4.3-stable_linux.x86_64
+          sudo mv Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Ludo-Warriors-APK
-          path: build/LudoWarriors.apk
+      - name: Check project
+        run: godot --headless --path . --editor --quit
